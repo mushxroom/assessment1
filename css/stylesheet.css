@@ -1,0 +1,119 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+  background-image: url("../images/back-ground.jpeg");
+  background-size: 10%;
+background-repeat: repeat;
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+}
+
+img{
+   width: 120px; 
+   margin-bottom: 15px; 
+   align-self: center;
+   /*Your code here*/
+}
+
+h1{
+  font-size: 50px;
+  line-height: 1;
+  padding: 50px 0;
+  text-align: center;
+}
+
+h2{
+  font-size: 32px;
+  line-height: 1.5;
+}
+
+nav li{
+  display:inline;
+  padding-right:20px;
+
+}
+
+/*nav a{
+  color: black;
+  font-weight: bold;
+  text-decoration: none; 
+}*/
+/*
+nav a:hover{
+  text-decoration: underline;
+}*/
+
+/*.skip a{
+  background: white;
+  left: 0;
+  padding: 6px;
+  -webkit-transition: top 1s ease-out;
+  transition: top 1s ease-out;
+  z-index: 1;
+
+  /*Your code here - position relative to the parent */
+  /*position: absolute;
+  Your code here - place 40px higher ;
+  margin-top: -40px;
+}*/
+
+/*Your code here*/
+/*Add the selector and rule to move the skip 
+link to the exact top of the page.*/
+.skip a:focus{
+  margin-top: 0px;
+}
+
+/*Your code here*/
+/*Add the selector and code to put a 2px black 
+border around all elements in focus.*/
+*:focus{
+  border: 2px solid black;
+}
+  
+
+footer{
+  background-color: black;
+  color: white;
+  grid-column: 1 / -1;  /*Can you explain what this does?*/
+  /*from first to the last, take one row*/
+  grid-row: 7 / auto;   /*Can you rewrite it?*/
+  padding-top: 30px;
+  text-align: center;
+}
+
+/*nav{
+  background-color: #ddd;
+  padding: 20px 0; 
+  text-align: left;
+
+  Your code here
+  /*Span the top row*/
+ /* grid-column: 1/-1;
+  grid-row: 1/span 1;
+
+}*/
+
+
+
+
+@media all and (min-width: 800px){
+
+ 
+
+
+}  /*End the media query*/
+/*
+@media screen and (prefers-reduced-motion: reduce){
+  html{
+      scroll-behavior: auto;  Removes scroll animation 
+  }
+
+  .skip a{
+    -webkit-transition: none;
+    transition: none;
+  }
+}*/

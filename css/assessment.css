@@ -1,0 +1,87 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+  background-image: url("../images/back-ground.jpeg");
+  background-repeat: repeat;
+  background-size: initial ;
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+}
+
+img{
+   width: 120px; 
+   margin-bottom: 15px; 
+   margin-left: auto;
+   margin-right: auto;
+   display: block;
+   /*Your code here*/
+}
+
+section{
+  display: grid;
+  justify-items: center;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto auto auto auto;
+  grid-row-gap: 15px;
+}
+
+div{
+   padding: 30px; 
+   margin:5px; 
+
+   /* YOUR CODE HERE */
+}
+
+h1{
+  font-size: 50px;
+  line-height: 1;
+  padding: 50px 0;
+  text-align: center;
+}
+
+h2{
+  font-size: 32px;
+  line-height: 1.5;
+}
+
+
+
+
+
+
+
+@media all and (min-width: 850px){
+
+section{
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto ;
+  grid-row-gap: 15px;
+}
+div:nth-child(odd){
+  
+}
+div:nth-child(even){
+  border: 2px solid black;
+  padding: auto auto auto;
+}
+ 
+
+
+}  /*End the media query*/
+/*
+@media screen and (prefers-reduced-motion: reduce){
+  html{
+      scroll-behavior: auto;  Removes scroll animation 
+  }
+
+  .skip a{
+    -webkit-transition: none;
+    transition: none;
+  }
+}*/
